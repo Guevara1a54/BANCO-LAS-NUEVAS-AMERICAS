@@ -1,8 +1,8 @@
 -- Banco "Las Nuevas Américas"
 -- POO - CIBERSEGURIDAD V
 
-CREATE DATABASE BDBANCO_LAS_NUEVAS_AMERICAS;
-USE BDBANCO_LAS_NUEVAS_AMERICAS;
+CREATE DATABASE bdbanco_las_nuevas_americas;
+USE bdbanco_las_nuevas_americas;
 
 -- TABLAS:
 
