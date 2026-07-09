@@ -7,7 +7,7 @@ class Conexion:
     _HOST: str = "localhost"
     _USER: str = "root"
     _PASSWORD: str = "123456"
-    _DATABASE: str = "BDBANCO_LAS_NUEVAS_AMERICAS"
+    _DATABASE: str = "bdbanco_las_nuevas_americas"
     _PORT: int = 3306
 
     @classmethod
