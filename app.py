@@ -1692,7 +1692,7 @@ elif "Tarjetas" in opcion_principal:
         col_formulario, col_imagen_der = st.columns([7, 3])
         
         with col_formulario:
-            idTarjeta = st.text_input("ID Tarjeta (Ej: TR0001):").strip()
+            idTarjeta = st.text_input("ID Tarjeta (Ej: T00001):").strip()
             numeroTarjeta = st.text_input("Número de Tarjeta (16 dígitos):", max_chars=16).strip()
             tipo = st.selectbox("Tipo de Tarjeta:", ["Débito", "Crédito"])
             
@@ -1746,7 +1746,7 @@ elif "Tarjetas" in opcion_principal:
     # --- 3. CONSULTAR TARJETA POR ID 
     elif submenu == "Consultar tarjeta por ID.":
         st.markdown("<h3 style='color:#D4AF37;'>🔍 Consultar Detalles de Tarjeta:</h3>", unsafe_allow_html=True)
-        id_buscar = st.text_input("Ingrese el Código de Tarjeta (Ej: TR0001):").strip()
+        id_buscar = st.text_input("Ingrese el Código de Tarjeta (Ej: T00001):").strip()
         
         if id_buscar:
             t = TarjetaControlador.buscar(id_buscar)
@@ -1792,7 +1792,7 @@ elif "Tarjetas" in opcion_principal:
                 st.error("❌ Registro no encontrado.")
             else:
                 st.warning(f"⚠️ ¿Confirmar la baja definitiva del plástico {t.numeroTarjeta} ({t.tipoTarjeta})?")
-                if st.button("💥 Proceder a la eliminación"):
+                if st.button("Proceder a la eliminación"):
                     if TarjetaControlador.eliminar(id_elim):
                         st.success("🗑️ Tarjeta eliminada correctamente de los archivos bancarios.")
                     else:
