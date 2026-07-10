@@ -3,7 +3,7 @@ import base64
 import os
 import pandas as pd
 from datetime import datetime
-# IMPORTS DE TODOS LOS CONTROLADORES DE TU PROYECTO BANCO
+# IMPORTS 
 # ==============================================================================
 from controladores.sucursal_controlador import SucursalControlador
 from controladores.cliente_controlador import ClienteControlador
@@ -96,7 +96,7 @@ def aplicar_diseno_bancario(ruta_logo):
             font-size: 18px !important; /* Regular: ni pequeño ni mediano */
         }}
 
-        /* 5. MENÚ LATERAL (SIDEBAR) ELEGANTE */
+        /* 5. MENÚ LATERAL (SIDEBAR) */
         [data-testid="stSidebar"] {{
             background-color: #050C16 !important;
             border-right: 2px solid #D4AF37 !important;
